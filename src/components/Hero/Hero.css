@@ -1,0 +1,23 @@
+.carousel {
+    position: 'relative';
+    grid-column: 1/13;
+    margin-left: -5.5%;
+
+}
+
+
+.h1{
+    margin-top: 40vh;
+    margin-bottom: 120px;
+}
+
+@media screen and (min-width: 620px) {
+    .carousel{
+      grid-column: 5/13;
+      
+    }
+    .h1{
+        margin-top: 55vh;
+        margin-bottom: 0px;
+    }
+  }

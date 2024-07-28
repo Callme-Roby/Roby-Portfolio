@@ -1,0 +1,13 @@
+.nav-size {
+    font-size: calc(20px + (24 - 20) * ((100vw - 340px) / (1440 - 340)));
+}
+
+.logo {
+    width: 25.5px;
+    height: 52px;
+}
+
+header{
+    top: 0;
+    z-index: 1000;
+}
