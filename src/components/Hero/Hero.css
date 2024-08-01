@@ -11,6 +11,12 @@
     margin-bottom: 120px;
 }
 
+.hero-legend {
+    position: absolute;
+    bottom: 8px;
+    left: 12px;
+}
+
 @media screen and (min-width: 620px) {
     .carousel {
         grid-column: 6/13;

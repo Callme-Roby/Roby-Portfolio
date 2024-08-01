@@ -35,6 +35,8 @@
 :root {
   --bg-color: #ffffff;
   --text-color: #000000;
+  --tag-photoshop: #001E36;
+  --tag-lightroom: #31A8FF;
 }
 
 *,
@@ -70,6 +72,7 @@ html.lenis body {
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -100,6 +103,10 @@ a {
 
 /* Grid container */
 
+.grid {
+  display: grid;
+}
+
 .gc-f {
   grid-column: 1/13;
 }
@@ -119,6 +126,10 @@ a {
 
 .flex {
   display: flex;
+}
+
+.fdc {
+  flex-direction: column;
 }
 
 .aic {
@@ -141,6 +152,10 @@ a {
 
 /* fonts */
 
+.white-text {
+  color: var(--bg-color);
+}
+
 .title {
   font-size: calc(32px + (48 - 32) * ((100vw - 340px) / (1440 - 340)));
   font-weight: 600;
@@ -153,6 +168,7 @@ a {
 
 .section-title {
   font-size: calc(40px + (96 - 40) * ((100vw - 340px) / (1440 - 340)));
+  font-weight: 900;
 }
 
 .project-title {
@@ -161,14 +177,24 @@ a {
 
 .description-text {
   font-size: 16px;
+  font-weight: 400;
 }
 
 .tag-project {
   font-size: 20px;
+  font-weight: 300;
 }
 
 .fw900 {
   font-weight: 900;
+}
+
+.stroke-text {
+  color: transparent;
+  stroke-width: 1px;
+  stroke-opacity: 1;
+  -webkit-text-stroke-color: var(--text-color);
+  -webkit-text-stroke-width: 1px;
 }
 
 /* Containers & displays */
@@ -188,9 +214,7 @@ a {
   padding-right: 5.5%;
 }
 
-.pt32 {
-  padding-top: 32px;
-}
+
 
 .img-container,
 .video-container {
@@ -207,14 +231,75 @@ video {
   object-fit: cover;
 }
 
+.img-container img.icon {
+  width: auto;
+  height: auto;
+}
+
 /* Rows & Columns gaps */
+.cg-20 {
+  column-gap: 20px;
+}
+
 .rg-20 {
   row-gap: 20px;
 }
 
-/* position */
+.rg-32 {
+  row-gap: 32px;
+}
+
+/* Position */
 
 .fixed {
   position: fixed;
   width: 100%;
+}
+
+
+/* Margin & Padding */
+
+.ml-16 {
+  margin-left: 16px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.pt32 {
+  padding-top: 32px;
+}
+
+
+/* Border bottom */
+.border-bottom-black {
+  border-bottom: 1px solid var(--text-color);
+}
+
+
+/* Tags */
+
+.tag {
+  position: relative;
+  padding-left: 16px;
+}
+
+.tag::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.tag-photoshop::after {
+  background-color: var(--tag-photoshop);
+}
+
+.tag-lightroom::after {
+  background-color: var(--tag-lightroom);
 }

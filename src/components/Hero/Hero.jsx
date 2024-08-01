@@ -41,6 +41,14 @@ export default function Hero() {
             }}
           />
         ))}
+        <a href="#" className="hero-legend white-text ">
+          Tiré de l'album <span className="italic">My self 'n' I</span>
+          <img
+            className="icon ml-16"
+            src="/img/LinkArrow.svg"
+            alt="Icône de fléche qui pointe vers la droite afin d'indiquer un lien"
+          />
+        </a>
       </div>
     </section>
   );
