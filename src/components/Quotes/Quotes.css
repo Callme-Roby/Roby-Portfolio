@@ -1,0 +1,19 @@
+.mt140-220 {
+    margin-top: 140px;
+}
+
+.mb140-220 {
+    margin-bottom: 140px;
+}
+
+
+@media screen and (min-width: 620px) {
+    .mt140-220 {
+        margin-top: 220px;
+
+    }
+
+    .mb140-220 {
+        margin-bottom: 220px;
+    }
+}

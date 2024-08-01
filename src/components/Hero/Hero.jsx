@@ -22,7 +22,7 @@ export default function Hero() {
   return (
     <section className="margin-container container">
       <div className="h1 flex aife gc-f-1-5">
-        <h1>
+        <h1 className="title">
           Concepteur UI <br />
           Designer <br /> <br /> Roby
         </h1>
@@ -30,8 +30,7 @@ export default function Hero() {
           <img src="./img/HeroArrow.svg" alt="Arrow to scroll" />
         </a>
       </div>
-      <div className="carousel img-container" >
-
+      <div className="carousel img-container">
         {images.map((image, index) => (
           <img
             key={index}
