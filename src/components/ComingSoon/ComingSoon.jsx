@@ -7,7 +7,7 @@ export default function ComingSoon() {
       <h2 className="section-title stroke-text gc-f">Coming soon</h2>
       <div className="gc-f">
         <article className="container rg-32 cg-32-large">
-          <div className="img-container fdc gc-f-1-7">
+          <div className="img-container fdc gc-f-1-7 large">
             <img
               src="/img/ComingSoon/Album 1 - My self (2) 2.png"
               alt=""
@@ -19,7 +19,7 @@ export default function ComingSoon() {
               className="max-h-326"
             />
           </div>
-          <div className="gc-f-7-13 flex fdc h100">
+          <div className="gc-f-7-13 large flex fdc h100">
             <h3 className="project-title">My self 'n' I</h3>
             <h4 className="tag-project border-bottom-black-2">
               Photographie - Montage - Autoportrait
