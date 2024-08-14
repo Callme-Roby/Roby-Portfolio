@@ -25,11 +25,12 @@ export default function ComingSoon() {
               Photographie - Montage - Autoportrait
             </h4>
             <p className="description-text mt-20">
-              Premier album photo porté sur la personnification du photographe.
-              Plus qu'un message, le but est de transmettre une émotion. Une
-              émotion libre à interprétation mais une émotion qui à était vécu
-              et qui à été propre à chacun. Ces photos sont la représentation de
-              la paix intérieur ainsi que l'acceptation de soi.
+              « My self 'n' I » est un projet photographique autobiographique
+              unique, où chaque cliché met en scène le photographe sous la forme
+              de quatre entité qui cohabite, comme s'il était multi-cloné. Ce
+              premier album photo explore la personnification du photographe,
+              allant bien au-delà de la simple captation d'image pour exprimer
+              une émotion profonde, librement interprétable par le spectateur.
             </p>
             <div className="description-text tags-container flex cg-20 mt-20 h100 aife">
               <p className="tag tag-photoshop">Photoshop</p>

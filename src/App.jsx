@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { ReactLenis, useLenis } from "lenis/react";
 
+// Custom Import
 import "./App.css";
 import Header from "./components/Header/Header.jsx";
 import Hero from "./components/Hero/Hero.jsx";
@@ -10,11 +11,13 @@ import Projects from "./components/Projects/Projects.jsx";
 function App() {
   return (
     <>
-      <Header />
-      <Hero />
-      <Quotes />
-      <ComingSoon />
-      <Projects />
+      <ReactLenis root>
+        <Header />
+        <Hero />
+        <Quotes />
+        <ComingSoon />
+        <Projects />
+      </ReactLenis>
     </>
   );
 }
